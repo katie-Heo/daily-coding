@@ -1,9 +1,5 @@
 package leetcode;
 
-import static org.junit.Assert.*;
-
-import java.awt.SystemTray;
-import java.math.BigInteger;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -25,35 +21,35 @@ public class _0007_ReverseIntegerTest {
     @Test
     public void test1() {
         int x = 123;
-        Assert.assertEquals(solution.reverse(x), 321);
+        Assert.assertEquals(321, solution.reverse(x));
     }
 
     @Test
     public void test2() {
         int x = -123;
-        Assert.assertEquals(solution.reverse(x), -321);
+        Assert.assertEquals(-321, solution.reverse(x));
     }
 
     @Test
     public void test3() {
         int x = 120;
-        Assert.assertEquals(solution.reverse(x), 21);
+        Assert.assertEquals(21, solution.reverse(x));
     }
 
     @Test
     public void test4() {
         int x = 0;
-        Assert.assertEquals(solution.reverse(x), 0);
+        Assert.assertEquals(0, solution.reverse(x));
     }
     @Test
     public void test5() {
         int x = 1534236469;
-        Assert.assertEquals(solution.reverse(x), 0);
+        Assert.assertEquals(0, solution.reverse(x));
     }
   @Test
     public void test6() {
         int x = -2147483648;
-        Assert.assertEquals(solution.reverse1(x), 0);
+        Assert.assertEquals(0, solution.reverse1(x));
     }
 
 }
