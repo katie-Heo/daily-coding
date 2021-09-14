@@ -22,10 +22,10 @@ public class Hash_베스트앨범Test {
 
     @Test
     public void test1() {
-        String genres []= {"classic", "pop", "classic", "classic", "pop"};
-        int plays [] = {500, 600, 150, 800, 2500};
+        String genres []= {"classic", "pop", "classic", "classic", "pop","jazz"};
+        int plays [] = {500, 600, 150, 800, 2500, 300};
 
         int[] actual = solution.solution(genres, plays);
-        Assert.assertArrayEquals(new int [] {4,1,3,0}, actual);
+        Assert.assertArrayEquals(new int [] {4,1,3,0,5}, actual);
     }
 }
